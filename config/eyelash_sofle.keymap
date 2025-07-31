@@ -10,6 +10,7 @@
 #include <dt-bindings/zmk/pointing.h>
 
 &mmv_input_listener { input-processors = <&zip_xy_scaler 2 1>; };
+
 &msc_input_listener { input-processors = <&zip_scroll_scaler 2 1>; };
 
 &msc {
@@ -29,6 +30,7 @@
         compatible = "zmk,behavior-sensor-rotate";
         #sensor-binding-cells = <0>;
         bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+
         tap-ms = <100>;
     };
 
@@ -41,6 +43,7 @@
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
             bindings = <&kp>, <&kp>;
+
             hold-trigger-key-positions = <13 14 15 16 17 18>;
             hold-trigger-on-release;
         };
@@ -53,6 +56,7 @@
             tapping-term-ms = <280>;
             quick-tap-ms = <175>;
             bindings = <&kp>, <&kp>;
+
             hold-trigger-key-positions = <1 2 3 4 5 6>;
             hold-trigger-on-release;
         };
@@ -63,11 +67,11 @@
 
         base {
             bindings = <
-&kp ESC     &kp N1          &kp N2          &kp N3            &kp N4              &kp N5       &kp UP_ARROW     &kp N6     &kp N7               &kp N8             &kp N9           &kp N0                   &kp BACKSPACE
-&kp TAB     &kp Q           &kp W           &kp E             &kp R               &kp T        &kp DOWN_ARROW   &kp Y      &kp U                &kp I              &kp O            &kp P                    &kp BSLH
-&kp CAPS    &hml LEFT_GUI A &hml LEFT_ALT S &hml LEFT_SHIFT D &hml LEFT_CONTROL F &kp G        &kp LEFT_ARROW   &kp H      &hmr RIGHT_CONTROL J &hmr RIGHT_SHIFT K &hmr RIGHT_ALT L &hmr RIGHT_GUI SEMICOLON &kp APOS
-&kp LSHFT   &kp Z           &kp X           &kp C             &kp V               &kp B        &kp RIGHT_ARROW  &kp N      &kp M                &kp COMMA          &kp DOT          &kp FSLH                 &kp ENTER
-&kp C_MUTE  &kp LCTRL       &kp LEFT_GUI    &kp LEFT_ALT      &mo 2               &kp SPACE    &kp ENTER        &kp SPACE  &kp ENTER            &mo 3              &kp RIGHT_SHIFT  &kp DELETE
+&kp GRAVE         &kp N1           &kp N2           &kp N3             &kp N4               &kp N5       &kp UP_ARROW     &kp N6     &kp N7                &kp N8              &kp N9            &kp N0                    &kp BACKSPACE
+&kp TAB           &kp Q            &kp W            &kp E              &kp R                &kp T        &kp DOWN_ARROW   &kp Y      &kp U                 &kp I               &kp O             &kp P                     &kp BSLH
+&kp ESCAPE        &hml LEFT_GUI A  &hml LEFT_ALT S  &hml LEFT_SHIFT D  &hml LEFT_CONTROL F  &kp G        &kp LEFT_ARROW   &kp H      &hmr RIGHT_CONTROL J  &hmr RIGHT_SHIFT K  &hmr RIGHT_ALT L  &hmr RIGHT_GUI SEMICOLON  &kp APOS
+&kp LEFT_CONTROL  &kp Z            &kp X            &kp C              &kp V                &kp B        &kp RIGHT_ARROW  &kp N      &kp M                 &kp COMMA           &kp DOT           &kp FSLH                  &kp ENTER
+&kp C_MUTE        &kp LCTRL        &kp LEFT_GUI     &kp LEFT_ALT       &mo 2                &kp SPACE    &kp ENTER        &kp SPACE  &kp ENTER             &mo 3               &kp RIGHT_SHIFT   &kp DELETE
             >;
 
             display-name = "base";
@@ -105,6 +109,16 @@
             >;
 
             display-name = "layer2";
+        };
+
+        layer_4 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+            >;
         };
     };
 };
