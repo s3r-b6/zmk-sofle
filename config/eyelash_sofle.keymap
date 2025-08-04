@@ -99,11 +99,11 @@
 
         sym {
             bindings = <
-&kp GRAVE  &kp CARET  &kp AT_SIGN           &kp HASH               &kp DOLLAR  &kp PERCENT      &trans  &trans  &trans     &trans         &trans         &trans            &kp DELETE
-&kp TILDE  &kp LBKT   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RBKT    &kp PIPE         &trans  &trans  &kp MINUS  &kp UNDER      &kp EQUAL      &kp PLUS          &trans
-&trans     &kp EXCL   &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp QMARK   &kp AMPERSAND    &trans  &trans  &kp DOT    &kp COLON      &kp COMMA      &kp SEMI          &kp DQT
-&trans     &trans     &trans                &trans                 &trans      &kp ASTERISK     &trans  &trans  &kp SLASH  &kp BACKSLASH  &kp LESS_THAN  &kp GREATER_THAN  &kp SQT
-&trans     &trans     &trans                &trans                 &trans      &trans           &trans  &trans  &trans     &trans         &trans         &trans
+&kp GRAVE  &kp CARET  &kp AT_SIGN    &kp HASH              &kp DOLLAR             &kp PERCENT     &trans  &trans  &trans     &trans         &trans         &trans            &kp DELETE
+&kp TILDE  &kp EXCL   &kp QMARK      &kp LEFT_BRACKET      &kp RBKT               &kp ASTERISK    &trans  &trans  &kp MINUS  &kp UNDER      &kp EQUAL      &kp PLUS          &trans
+&trans     &kp PIPE   &kp AMPERSAND  &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans          &trans  &trans  &kp DOT    &kp COLON      &kp COMMA      &kp SEMI          &kp DQT
+&trans     &trans     &trans         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans          &trans  &trans  &kp SLASH  &kp BACKSLASH  &kp LESS_THAN  &kp GREATER_THAN  &kp SQT
+&trans     &trans     &trans         &trans                &trans                 &trans          &trans  &trans  &trans     &trans         &trans         &trans
             >;
 
             display-name = "sym";
