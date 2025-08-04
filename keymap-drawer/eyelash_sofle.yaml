@@ -64,7 +64,7 @@ layers:
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - nav
   - special
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: 'Alt+Ctl+$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
   gaming:
   - $$mdi:keyboard-esc$$
   - {t: '1', s: '!'}
@@ -120,10 +120,10 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:apple-keyboard-option$$
-  - M
+  - $$mdi:keyboard-space$$
   - nav
   - sym
-  - $$mdi:keyboard-space$$
+  - M
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -159,8 +159,8 @@ layers:
   - {t: \, s: '|'}
   - '!'
   - '{'
-  - +
   - {t: '-', s: _}
+  - +
   - '}'
   - '&'
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
