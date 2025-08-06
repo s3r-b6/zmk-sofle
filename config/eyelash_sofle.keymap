@@ -78,7 +78,7 @@
         base {
             bindings = <
 &kp GRAVE       &kp N1           &kp N2           &kp N3             &kp N4               &kp N5                   &trans  &kp N6                &kp N7                &kp N8              &kp N9            &kp N0                    &kp BACKSPACE
-&kp TAB         &kp Q            &kp W            &kp E              &kp R                &kp T                    &trans  &kp Y                 &kp U                 &kp I               &kp O             &kp P                     &kp BSLH
+&kp TAB         &kp Q            &kp W            &kp E              &kp R                &kp T                    &trans  &kp Y                 &kp U                 &kp I               &kp O             &kp P                     &trans
 &kp ESCAPE      &hml LEFT_GUI A  &hml LEFT_ALT S  &hml LEFT_SHIFT D  &hml LEFT_CONTROL F  &hml LA(LC(LSHIFT)) G    &trans  &hmr LA(LC(LSHFT)) H  &hmr RIGHT_CONTROL J  &hmr RIGHT_SHIFT K  &hmr RIGHT_ALT L  &hmr RIGHT_GUI SEMICOLON  &kp SQT
 &sk LEFT_SHIFT  &kp Z            &kp X            &kp C              &kp V                &kp B                    &trans  &kp N                 &kp M                 &kp COMMA           &kp DOT           &kp QMARK                 &sk RIGHT_SHIFT
 &trans          &trans           &trans           &mo 3              &mo 2                &kp SPACE                &trans  &kp ENTER             &mo 2                 &mo 3               &mo 4             &trans
@@ -99,11 +99,11 @@
 
         sym {
             bindings = <
-&kp TILDE  &trans          &trans                &trans                 &trans           &trans         &trans  &trans    &trans     &trans          &trans         &trans            &kp DELETE
-&trans     &kp CARET       &kp AT                &kp HASH               &kp DOLLAR       &kp PERCENT    &trans  &kp STAR  &kp EQUAL  &kp PLUS        &kp AMPS       &kp PIPE          &kp SLASH
-&trans     &kp LEFT_BRACE  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp RIGHT_BRACE  &trans         &trans  &trans    &kp MINUS  &kp UNDERSCORE  &kp LESS_THAN  &kp GREATER_THAN  &kp DQT
-&trans     &trans          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans           &trans         &trans  &trans    &trans     &kp COMMA       &kp DOT        &kp EXCL          &trans
-&trans     &trans          &trans                &trans                 &trans           &trans         &trans  &trans    &trans     &trans          &trans         &trans
+&kp TILDE  &trans          &trans                &trans                 &trans           &trans         &trans  &trans  &trans     &trans          &trans         &trans            &kp DELETE
+&trans     &kp CARET       &kp AT                &kp HASH               &kp DOLLAR       &kp PERCENT    &trans  &trans  &kp PLUS   &kp ASTERISK    &kp AMPS       &kp PIPE          &trans
+&trans     &kp LEFT_BRACE  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp RIGHT_BRACE  &trans         &trans  &trans  &kp MINUS  &kp UNDERSCORE  &kp LESS_THAN  &kp GREATER_THAN  &trans
+&trans     &kp SLASH       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH    &trans         &trans  &trans  &kp EQUAL  &kp SEMICOLON   &kp COLON      &kp EXCL          &trans
+&trans     &trans          &trans                &trans                 &trans           &trans         &trans  &trans  &trans     &trans          &trans         &trans
             >;
 
             display-name = "sym";
