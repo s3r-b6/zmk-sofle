@@ -58,9 +58,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - nav
   - sym
-  - $$mdi:keyboard-space$$
-  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:keyboard-return$$', type: enter}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:keyboard-space$$
   - sym
   - nav
   - special
