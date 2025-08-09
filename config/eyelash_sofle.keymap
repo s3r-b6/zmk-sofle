@@ -61,6 +61,41 @@
             hold-trigger-key-positions = <1 2 3 4 5 6>;
             hold-trigger-on-release;
         };
+
+        hml_s: homerow_mod_left_sticky {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            require-prior-idle-ms = <125>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <175>;
+            bindings = <&sk>, <&kp>;
+
+            hold-trigger-key-positions = <13 14 15 16 17 18>;
+            hold-trigger-on-release;
+            label = "homerow_mod_left_sticky";
+        };
+
+        hmr_s: homerow_mod_right_sticky {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            require-prior-idle-ms = <125>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <175>;
+            bindings = <&sk>, <&kp>;
+
+            hold-trigger-key-positions = <1 2 3 4 5 6>;
+            hold-trigger-on-release;
+            label = "homerow_mod_right_sticky";
+        };
+
+        numword: numword {
+            compatible = "zmk,behavior-caps-word";
+            label = "NUMWORD";
+            #binding-cells = <0>;
+            continue-list = <NUMBER_1 NUMBER_2 NUMBER_3 NUMBER_4 NUMBER_5 NUMBER_6 NUMBER_7 NUMBER_8 NUMBER_9 NUMBER_0>;
+        };
     };
 
     macros {
@@ -77,11 +112,11 @@
 
         base {
             bindings = <
-&kp GRAVE       &kp N1           &kp N2           &kp N3             &kp N4               &kp N5                   &trans  &kp N6                &kp N7                &kp N8              &kp N9            &kp N0                    &kp BACKSPACE
-&kp TAB         &kp Q            &kp W            &kp E              &kp R                &kp T                    &trans  &kp Y                 &kp U                 &kp I               &kp O             &kp P                     &trans
-&kp ESCAPE      &hml LEFT_GUI A  &hml LEFT_ALT S  &hml LEFT_SHIFT D  &hml LEFT_CONTROL F  &hml LA(LC(LSHIFT)) G    &trans  &hmr LA(LC(LSHFT)) H  &hmr RIGHT_CONTROL J  &hmr RIGHT_SHIFT K  &hmr RIGHT_ALT L  &hmr RIGHT_GUI SEMICOLON  &kp SQT
-&sk LEFT_SHIFT  &kp Z            &kp X            &kp C              &kp V                &kp B                    &trans  &kp N                 &kp M                 &kp COMMA           &kp DOT           &kp QMARK                 &sk RIGHT_SHIFT
-&trans          &trans           &trans           &mo 3              &mo 2                &kp ENTER                &trans  &kp SPACE             &mo 2                 &mo 3               &mo 4             &trans
+&kp GRAVE       &kp N1           &kp N2           &kp N3             &kp N4                 &kp N5                   &trans  &kp N6                &kp N7                  &kp N8              &kp N9            &kp N0                    &kp BACKSPACE
+&kp TAB         &kp Q            &kp W            &kp E              &kp R                  &kp T                    &trans  &kp Y                 &kp U                   &kp I               &kp O             &kp P                     &trans
+&kp ESCAPE      &hml LEFT_GUI A  &hml LEFT_ALT S  &hml LEFT_SHIFT D  &hml_s LEFT_CONTROL F  &hml LA(LC(LSHIFT)) G    &trans  &hmr LA(LC(LSHFT)) H  &hmr_s RIGHT_CONTROL J  &hmr RIGHT_SHIFT K  &hmr RIGHT_ALT L  &hmr RIGHT_GUI SEMICOLON  &kp SQT
+&sk LEFT_SHIFT  &kp Z            &kp X            &kp C              &kp V                  &kp B                    &trans  &kp N                 &kp M                   &kp COMMA           &kp DOT           &kp QMARK                 &sk RIGHT_SHIFT
+&trans          &trans           &trans           &mo 3              &mo 2                  &kp ENTER                &trans  &kp SPACE             &mo 2                   &mo 3               &mo 4             &trans
             >;
 
             display-name = "base";
