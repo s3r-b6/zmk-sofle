@@ -26,7 +26,7 @@ layers:
   - I
   - O
   - P
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '&num_word 5'
   - $$mdi:keyboard-esc$$
   - {t: A, h: '$$mdi:apple-keyboard-command$$'}
   - {t: S, h: '$$mdi:apple-keyboard-option$$'}
