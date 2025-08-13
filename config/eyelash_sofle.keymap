@@ -124,7 +124,7 @@
 &kp TILDE  &kp EXCL                  &kp AT_SIGN           &kp HASH                     &kp DOLLAR                &kp PERCENT          &none  &trans    &trans              &trans                    &trans                     &trans                &kp DELETE
 &none      &kp LEFT_BRACKET          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS        &kp RIGHT_BRACKET         &kp SINGLE_QUOTE     &none  &none     &kp EXCL            &kp PLUS                  &kp MINUS                  &kp QMARK             &none
 &none      &hml LEFT_GUI LEFT_BRACE  &hml LEFT_ALT SLASH   &hml_s LEFT_SHIFT BACKSLASH  &hml_s LCTRL RIGHT_BRACE  &kp DOUBLE_QUOTES    &none  &kp HASH  &hmr_s RCTRL CARET  &hmr_s RIGHT_SHIFT EQUAL  &hmr RIGHT_ALT UNDERSCORE  &hmr LEFT_GUI DOLLAR  &kp STAR
-&trans     &none                     &kp PIPE              &kp AMPERSAND                &none                     &kp GRAVE            &none  &none     &kp LESS_THAN       &kp COMMA                 &kp PERIOD                 &kp GREATER_THAN      &trans
+&trans     &none                     &kp PIPE              &kp AMPERSAND                &none                     &kp GRAVE            &none  &none     &kp LESS_THAN       &kp SEMI                  &kp COLON                  &kp GREATER_THAN      &trans
 &none      &trans                    &trans                &trans                       &trans                    &trans               &none  &trans    &trans              &trans                    &trans                     &trans
             >;
 
